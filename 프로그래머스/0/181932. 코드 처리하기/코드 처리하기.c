@@ -27,7 +27,5 @@ char* solution(const char* code) {
     
     answer[index_num] = '\0';
     
-    if(index_num == 0) strcpy(answer, "EMPTY");
-    
-    return answer;
+    return index_num == 0 ? "EMPTY" : answer;
 }
