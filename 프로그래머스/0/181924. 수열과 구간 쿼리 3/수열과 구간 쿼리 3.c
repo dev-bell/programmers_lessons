@@ -15,11 +15,11 @@ int* solution(int arr[], size_t arr_len, int** queries, size_t queries_rows, siz
     int num_size = arr_len * sizeof(int);
     int* answer = (int*)malloc(num_size);
     
-    for (size_t i = 0; i < arr_len; i++) {
+    for (int i = 0; i < arr_len; i++) {
         answer[i] = arr[i];
     }
     
-    for (size_t k = 0; k < queries_rows; k++) {
+    for (int k = 0; k < queries_rows; k++) {
         int i = queries[k][0];
         int j = queries[k][1];
         swap(&answer[i], &answer[j]);
